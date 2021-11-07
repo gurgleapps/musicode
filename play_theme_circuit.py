@@ -21,11 +21,9 @@ def play_note(note_name, duration):
         speaker.duty_cycle=int(0)
     else:
         speaker.duty_cycle=int(35565/2)
-     speaker.duty_cycle=int(35565/2)
     speaker.frequency=frequency
     time.sleep(duration)
     speaker.duty_cycle=0
 
 for note in tune:
     play_note(note[0], note[1])
-speaker.duty_u16(0)
